@@ -17,7 +17,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Todas as Tarefas'),
             tileColor: paginaAtual == 'todas-tarefas'
-                ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)
+                ? Theme.of(context).colorScheme.primary.withOpacity(0.1)
                 : null,
             onTap: () {
               Navigator.of(context).pushReplacement(
@@ -30,7 +30,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Tarefas Pendentes'),
             tileColor: paginaAtual == 'tarefas-pendentes'
-                ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)
+                ? Theme.of(context).colorScheme.primary.withOpacity(0.1)
                 : null,
             onTap: () {
               Navigator.of(context).pushReplacement(
@@ -43,7 +43,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Tarefas Concluídas'),
             tileColor: paginaAtual == 'tarefas-concluidas'
-                ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)
+                ? Theme.of(context).colorScheme.primary.withOpacity(0.1)
                 : null,
             onTap: () {
               Navigator.of(context).pushReplacement(
